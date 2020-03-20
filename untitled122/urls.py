@@ -31,3 +31,5 @@ urlpatterns = [
     # 用include管理blog里的所有urls
     url('myAPP/', include('blog.urls')),
 ]
+
+# https://edu.51cto.com/center/course/lesson/index?id=222645
