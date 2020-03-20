@@ -8,7 +8,10 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 
-def index(request):
-    # 返回字符
-    return HttpResponse('hello, blog1111')
+
+def index1(request):
+    return HttpResponse("<h1>测试页面1</h1>")
+
+def index2(request):
+    return HttpResponse("<h1>测试页面2</h1>")
 

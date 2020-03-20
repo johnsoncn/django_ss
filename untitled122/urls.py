@@ -25,7 +25,9 @@ import blog.views as bl
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    url(r'blogindex/', bl.index, name="index11"),
+    # url(r'blogindex/', bl.index, name="index11"),
     # url(r'opinion/', include('opinion_app.urls')),
-    url('blog/', include('blog.urls')),
+
+    # 用include管理blog里的所有urls
+    url('myAPP/', include('blog.urls')),
 ]
