@@ -4,11 +4,12 @@
 """
 
 from django.conf.urls import url
-from blog.views import index1,index2
+from blog.views import index1,index2,index3
 
 urlpatterns = [
     url(r'test1/', index1),
     url(r'test2/', index2),
+    url(r'test3/', index3),
 ]
 
 
