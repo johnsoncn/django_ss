@@ -46,13 +46,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'aaa.apps.AaaConfig',
     # 必须要加上新建的app，否则无法创建数据库
     # 创建数据库：
     # python manage.py makemigrations
     # python manage.py migrate
-    'cmdb',
-    'blog'
+    'blog',
 ]
 
 MIDDLEWARE = [
@@ -122,7 +120,8 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+# LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'zh-Hans'  # admin管理界面改成中文
 
 TIME_ZONE = 'UTC'
 

@@ -20,7 +20,6 @@ Including another URLconf
 from django.conf.urls import url,include
 from django.contrib import admin
 from django.urls import path
-from cmdb import views
 import blog.views as bl
 
 urlpatterns = [
@@ -29,5 +28,6 @@ urlpatterns = [
     # url(r'opinion/', include('opinion_app.urls')),
 
     # 用include管理blog里的所有urls
-    url('blogtest/', include('blog.urls')),
+    # 根urls中，写在include()的第二个参数位置，namespace='blog' （这个应用的命名空间）
+    url('blogtest/', include('blog.urls', namespace='blog_aa')),
 ]

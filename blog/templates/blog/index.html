@@ -5,6 +5,20 @@
     <title>第一个页面</title>
 </head>
 <body>
-    第一次尝试{{ title }}    {# 接收字典参数title #}
+    {# 前端同学直接调用view.py里返回的字典{'article':'articles'}，即可调用Article类里的title或content方法 #}
+
+    {# 从blog跳转到page #}
+    <a href="{% url 'blog_aa:page_aa' %}">哈哈哈哈</a>
+
+
+        {# for循环取出articles里的所有内容 #}
+    {% for i in articles %}
+        {{ i.title }}
+{#        <a href="{% url 'blog:article' articles.id%}"><h3>{{ articles.title }}</h3></a>#}
+{#        <a href="{% url 'blog:page' article_Redir.id %}">{{ article_Redir.title }}</a>#}
+    {%  endfor %}
+
+    <a href="">新增文章</a>   {# 超链接 #}
+
 </body>
 </html>
